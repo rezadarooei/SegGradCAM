@@ -1,8 +1,8 @@
 from csbdeep.internals.blocks import unet_block
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Conv2D, Input, Activation, Conv2DTranspose, BatchNormalization, Dropout, UpSampling2D
-from tensorflow.keras.layers.pooling import MaxPooling2D
-from tensorflow.keras.layers.merge import concatenate
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.keras.layers import concatenate
 import os
 import sys
 from pathlib import Path
