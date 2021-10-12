@@ -1,8 +1,8 @@
 from csbdeep.internals.blocks import unet_block
-from keras.models import Model
-from keras.layers import Conv2D, Input, Activation, Conv2DTranspose, BatchNormalization, Dropout, UpSampling2D
-from keras.layers.pooling import MaxPooling2D
-from keras.layers.merge import concatenate
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Conv2D, Input, Activation, Conv2DTranspose, BatchNormalization, Dropout, UpSampling2D
+from tensorflow.keras.layers.pooling import MaxPooling2D
+from tensorflow.keras.layers.merge import concatenate
 import os
 import sys
 from pathlib import Path
@@ -12,8 +12,8 @@ if scr_folder not in sys.path:
 """
 from .training_write import TrainingParameters, TrainingResults
 from .dataloaders import Cityscapes
-from keras.preprocessing.image import ImageDataGenerator
-from keras.callbacks import ModelCheckpoint
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.callbacks import ModelCheckpoint
 from csbdeep.utils.tf import CARETensorBoard
 
 # Unet from CSBDeep
