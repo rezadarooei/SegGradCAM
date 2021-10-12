@@ -1,4 +1,4 @@
-from keras import backend as K
+from tensorflow.keras import backend as K
 """
 def my_metric_factory(the_param=1.0):
     def fn(y_true, y_pred):
@@ -7,7 +7,7 @@ def my_metric_factory(the_param=1.0):
     fn.__name__ = 'metricname_{}'.format(the_param)
     return fn
 """
-from keras.utils.generic_utils import serialize_keras_object
+from tensorflow.keras.utils.generic_utils import serialize_keras_object
 # Jaccard coefficient = IoU
 def IoU(smooth=1):
     def iou_coef(y_true, y_pred):
